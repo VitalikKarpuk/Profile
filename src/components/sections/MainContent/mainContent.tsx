@@ -6,7 +6,7 @@ import LetIsWorkTogether from '../../organisms/LetIsWorkTogether';
 
 const MainContent = () => {
     return (
-        <div className={styles.wrapper}>
+        <>
             <div className={styles.mainContentWrapper}>
                 <div className={styles.content}>
                     <p>Vitali Karpuk</p>
@@ -24,9 +24,8 @@ const MainContent = () => {
 
                 <img src={photo} alt="photo" />
             </div>
-
             <LetIsWorkTogether className={styles.letIsWorkTogether} />
-        </div>
+        </>
     );
 };
 

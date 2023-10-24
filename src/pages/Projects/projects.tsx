@@ -1,7 +1,8 @@
 import React from 'react';
+import Projects from '../../components/sections/Projects';
 
-const Projects = () => {
-    return <div>Projects Page</div>;
+const ProjectsPage = () => {
+    return <Projects />;
 };
 
-export default Projects;
+export default ProjectsPage;

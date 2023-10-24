@@ -1,7 +1,3 @@
-.wrapper {
-    padding: 0 100px;
-}
-
 .mainContentWrapper{
     display: flex;
 }
@@ -10,7 +6,6 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-
 }
 
 .content h2 {
@@ -29,7 +24,7 @@
     margin-bottom: 20px;
 }
 
-.wrapper img {
+.mainContentWrapper img {
     width: 400px;
     height: 500px;
 }
@@ -55,4 +50,11 @@
 .letIsWorkTogether {
     text-align: center;
     margin-top: 100px;
+}
+
+@media (max-width: 991px) {
+    .mainContentWrapper img {
+        display: none;
+    }
+    
 }

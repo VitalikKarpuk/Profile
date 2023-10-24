@@ -3,7 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import Home from './pages/Home/home';
 import AboutMe from './pages/AboutMe/about';
 import Contact from './pages/Contact/contact';
-import Projects from './pages/Projects/projects';
+import ProjectsPage from './pages/Projects/projects';
 
 import styles from './appRouter.module.css';
 
@@ -14,7 +14,7 @@ const AppRouter = () => {
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<AboutMe />} />
                 <Route path="/contact" element={<Contact />} />
-                <Route path="/projects" element={<Projects />} />
+                <Route path="/projects" element={<ProjectsPage />} />
             </Routes>
         </div>
     );

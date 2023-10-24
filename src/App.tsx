@@ -3,6 +3,7 @@ import './App.css';
 import AppRouter from './appRouter';
 import Header from './components/sections/Header/header';
 import Footer from './components/sections/Footer/footer';
+import ChatWithChatGPT from './components/organisms/ChatWithChatGPT';
 
 function App() {
     const handleWindowResize = () => {
@@ -23,6 +24,7 @@ function App() {
             <Header />
             <AppRouter />
             <Footer />
+            <ChatWithChatGPT />
         </div>
     );
 }
