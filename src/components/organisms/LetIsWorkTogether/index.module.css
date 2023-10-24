@@ -1,0 +1,17 @@
+.wrapper {
+    font-size: 72px;
+    color: var(--col--dark);
+
+}
+
+.link {
+    text-decoration: none;
+    color: var(--col--dark);
+    font-weight: 600;
+    transition: all .5s;
+}
+
+.link:hover {
+    text-decoration: underline;
+
+}

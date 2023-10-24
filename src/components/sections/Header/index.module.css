@@ -1,0 +1,86 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+.logo {
+    display: flex;
+    text-decoration: none;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+}
+
+.logo h1 {
+    margin: 0 0 10px;
+    font-size: 18px;
+    color: var(--col--dark);
+}
+
+.logo p {
+    margin: 0;
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: var(--col--dark);
+}
+
+.navigationDesktop {
+    display: flex;
+    gap: 20px;
+    align-items: flex-end;
+}
+
+.menuLink {
+    text-decoration: none;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: var(--second-text-color);
+}
+
+.activeMenuLink {
+    text-decoration: underline;
+}
+
+
+.mobileMenuToggle {
+    display: none;
+
+}
+
+.mobileMenuToggle span {
+    width: 100%;
+    height: 4px;
+    background-color: #333;
+    transition: transform 0.3s ease;
+}
+
+
+@media(max-width: 991px) {
+    .navigationDesktop {
+        display: none;
+    }
+
+    .mobileMenuToggle {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+        background: none;
+        border: none;
+        padding: 0;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

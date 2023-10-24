@@ -1,0 +1,85 @@
+.aboutMeSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 27px;
+    text-align: center;
+}
+
+.aboutMeSection h2 {
+    font-size: 44px;
+    margin: 0;
+    margin: 20px 0;
+    letter-spacing: -1px;
+    max-width: 80%;
+}
+
+.aboutMeSection p {
+    color: var(--col--gray1);
+    max-width: 70%;
+    font-size: 22px;
+}
+
+.listProjects {
+    text-align: left;
+}
+
+.listProjects li {
+    padding: 4px 0;
+}
+
+.listProjects a {
+    color: var(--col--dark);
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.listProjects a:hover {
+    color: var(--col--gray1);
+}
+
+.line {
+    display: block;
+    height: 1px;
+    width: 100%;
+    background-color: var(--col--gray3);
+    margin: 30px 0;
+}
+
+.techList {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+}
+
+.techList li {
+    font-size: 18px;
+    color: var(--col--light);
+    padding: 5px;
+    background-color: var(--col--dark);
+    border-radius: 6px;
+}
+
+@media (max-width: 992px) {
+    .aboutMeSection {
+        text-align: left;
+    }
+
+    .aboutMeSection h2 {
+        font-size: 34px;
+    }
+
+    .aboutMeSection p {
+        font-size: 18px;
+    }
+
+    .aboutMeSection p, .aboutMeSection h2 {
+        max-width: 100%;
+    }
+
+    .subHeader {
+        width: 100%;
+    }
+}

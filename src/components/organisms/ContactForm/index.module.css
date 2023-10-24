@@ -1,0 +1,100 @@
+.formContainer {
+    margin: 0 auto;
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.formContainer .formTitle {
+    font-size: 22px;
+    margin: 0;
+    margin-bottom: 20px;
+    color: var(--col--gray1);
+    font-weight: 500;
+}
+
+.formLabel {
+    display: block;
+    font-size: 12px;
+    margin-bottom: 5px;
+    color: var(--col--gray5);
+    font-weight: 400;
+}
+
+.formInput,
+.formTextarea {
+    width: calc(100% - 20px);
+    padding: 10px 0;
+    font-size: 16px;
+    color: var(--col--dark);
+    border: 1px solid var(--col--gray4);
+    margin-bottom: 16px;
+    border-width: 0 0 1px 0;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.select {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.formInput:focus-visible,
+.formTextarea:focus-visible {
+    outline: none;
+}
+
+
+.formInput::placeholder,
+.formTextarea::placeholder {
+    color: var(--col--dark);
+}
+
+.formTextarea {
+    resize: none;
+    overflow-y: hidden;
+    /* height: 44px; */
+}
+
+.formSubmitBtn {
+    background-color: var(--col--primary2);
+    color: var(--col--light);
+    padding: 12px 24px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.formSubmitBtn:hover {
+    background-color: var(--col--primary2variant);
+    transform: scale(1.05);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.formSubmitBtn:focus {
+    outline: none;
+}
+
+.formInput:focus,
+.formTextarea:focus {
+    outline: none;
+    border-color: var(--col--dark);
+}
+
+
+@media (max-width: 992px) {
+    .formContainer {
+        padding: 0;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .formInput,
+    .formTextarea {
+        width: calc(100% - 5px);
+    }
+}
