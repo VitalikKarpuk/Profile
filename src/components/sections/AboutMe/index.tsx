@@ -1,21 +1,30 @@
 import React from 'react';
 import SubHeader from '../../atoms/subHeader';
 import styles from './index.module.css';
+import { workExperience } from './constants';
 
 const techList = [
+    'HTML & CSS & SASS',
     'JavaScript',
     'TypeScript',
     'React',
     'Next.js',
-    'HTML',
-    'CSS',
-    'Git',
-    'Contentful',
-    'Contentstack',
-    'Jest',
-    'React Testing Library',
-    'JSDoc',
+    'Redux, Redux toolkit',
+    'Zustand',
+    'CSS module, styled-components',
+    'Jest, React Testing Library',
+    'Headless CMS (Contentful, Contentstack)',
+    'Formik',
     'Storybook',
+    'Material ui',
+    'JSDoc',
+    'Git',
+    'Github, GutLab, Bitbucket',
+    'Google Tag Manage',
+    'New Relic',
+    'Webpack',
+    'Jira, Confluence',
+    'Web3',
 ];
 
 const AboutMeSection = () => {
@@ -42,30 +51,22 @@ const AboutMeSection = () => {
                     ))}
                 </ul>
             </p>
-            <p>
-                I have worked on various projects, including major companies and startups, such as:
-                <ul className={styles.listProjects}>
-                    <li>
-                        <a href="https://www.arbys.com" target="_blank" rel="noopener noreferrer">
-                            Arby`s{' '}
-                        </a>
-                        - collaboration with the renowned restaurant brand Arby`s.
-                    </li>
-                    <li>
-                        <a href="https://www.buffalowildwings.com" target="_blank" rel="noopener noreferrer">
-                            Buffalowildwings{' '}
-                        </a>
-                        - involvement in the development of the Buffalo Wild Wings website.
-                    </li>
-                    <li>
-                        <a href="https://minascan.io/mainnet/home" target="_blank" rel="noopener noreferrer">
-                            Minascan{' '}
-                        </a>
-                        - interface development for Mina Protocol.
-                    </li>
-                </ul>
-                My experience includes developing functional user interfaces and creating responsive web applications.
-            </p>
+            <div className={styles.workExperience}>
+                {workExperience.map(({ company, period, title, responsibility, id }) => {
+                    return (
+                        <div key={id}>
+                            <h2 className={styles.companyName}>{company}</h2>
+                            <div className={styles.period}>{period}</div>
+                            <div className={styles.jobTitle}>{title}</div>
+                            <ul>
+                                {responsibility.map((item, index) => {
+                                    return <li key={index}>{item}</li>;
+                                })}
+                            </ul>
+                        </div>
+                    );
+                })}
+            </div>
         </div>
     );
 };

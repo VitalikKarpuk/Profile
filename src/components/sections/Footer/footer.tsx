@@ -33,7 +33,7 @@ const Footer = () => {
     return (
         <footer>
             <div className={styles.content}>
-                <p className={styles.copyright}>&copy; 2023 Vitali Karpuk</p>
+                <p className={styles.copyright}>&copy; 2024 Vitali Karpuk</p>
                 <div className={styles.contactInfo}>
                     <a href="mailto:vitalikkarpuk652@gmail.com" target="_blank" rel="noopener noreferrer">
                         Email: vitalikkarpuk652@gmail.com

@@ -4,6 +4,7 @@ import Arbys from './img/arbys.png';
 import Bww from './img/bww.png';
 import Mina from './img/mina.png';
 import Sui from './img/Sui.png';
+import Acuvue from './img/acuvue.png';
 import { ReactComponent as ExternalIcon } from './img/externalLink.svg';
 
 import styles from './index.module.css';
@@ -42,9 +43,9 @@ const projectList: IProject[] = [
     {
         name: 'Bww',
         header: 'Buffalo Wild Wings | Wings. Beer. Sports',
-        description:
-            'Web app for leading global fast-food restaurant chain with more than 2,800 restaurants worldwide.',
+        description: 'Web app for Buffalo Wild Wings.',
         technologies: [
+            'HTML & CSS',
             'React',
             'Next.js',
             'TypeScript',
@@ -64,7 +65,7 @@ const projectList: IProject[] = [
         header: 'Minascan Block Explorer',
         description:
             'Web app for Block Explorer and Analytics Platform for Mina, a lightweight succinct blockchain that uses ZK-proofs.',
-        technologies: ['React', 'Redux', 'SCSS module', 'NPM packages'],
+        technologies: ['HTML & SASS', 'React', 'Redux', 'SCSS module', 'NPM packages'],
         img: Mina,
         link: 'https://minascan.io/',
     },
@@ -72,9 +73,30 @@ const projectList: IProject[] = [
         name: 'Suiscan',
         header: 'Blockchain explorer',
         description: 'Web app for Block Explorer and Analytics Platform for Sui.',
-        technologies: ['React', 'Redux', 'SCSS module', 'NPM packages'],
+        technologies: ['HTML & SASS', 'React', 'Redux', 'SCSS module', 'NPM packages'],
         img: Sui,
         link: 'https://suiscan.xyz/',
+    },
+    {
+        name: 'ACUVUE',
+        header: 'ACUVUE',
+        description: 'Web app for Block Explorer and Analytics Platform for Sui.',
+        technologies: [
+            'HTML & CSS',
+            'React',
+            'Next.js',
+            'TypeScript',
+            'Redux Toolkit',
+            'Styled-components',
+            'Formik',
+            'Node',
+            'Storybook',
+            'Contentful',
+            'React Testing Library',
+            'Jest',
+        ],
+        img: Acuvue,
+        link: 'https://www.acuvue.com/en-us/',
     },
 ];
 

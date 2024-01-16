@@ -18,7 +18,11 @@ const ChatWithChatGPT = () => {
             const question = textAreaRef.current.value;
             event.preventDefault();
             setMessages([...messages, { role: Role.USER, content: question }, { role: Role.ASSISTANT, loading: true }]);
-            requestDataToOpenAI([...messages, { role: Role.USER, content: question }]);
+            try {
+                requestDataToOpenAI([...messages, { role: Role.USER, content: question }]);
+            } catch (error) {
+                console.log(error);
+            }
             textAreaRef.current.value = '';
         }
     };
@@ -28,7 +32,7 @@ const ChatWithChatGPT = () => {
     };
     useEffect(() => {
         if (response) {
-            const answer = response.choices[0]?.message.content;
+            const answer = response.choices?.[0]?.message.content;
             const newMessage = messages.map((message) => {
                 if (message.loading) {
                     return { role: Role.ASSISTANT, content: answer };
@@ -37,6 +41,7 @@ const ChatWithChatGPT = () => {
             });
             setMessages(newMessage);
         }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [response, error]);
 
     return (
