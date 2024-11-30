@@ -62,10 +62,18 @@
     border-radius: 6px;
 }
 
+.workExperience {
+    max-width: 80%;
+}
+
+.detailWrapper {
+    width: calc(80% - 35px);
+}
+
 .workExperience > div {
     display: flex;
-    flex-direction: column;
     align-items: start;
+    gap: 10px;
 }
 
 .workExperience li {
@@ -75,17 +83,20 @@
 .companyName {
     color: var(--col--dark);
     font-weight: 600;
-    text-align: center;
+    text-align: start;
+    font-size: 18px;
 }
 
 .period {
     font-size: 14px;
-    margin: 5px 0;
     color: var(--second-text-color);
+    width: 225px;
+    text-align: start;
 }
 
 .jobTitle {
     color: var(--second-text-color);
+    text-align: start;
 }
 
 @media (max-width: 992px) {
@@ -108,5 +119,21 @@
 
     .subHeader {
         width: 100%;
+    }
+    .workExperience {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 992px) {
+    .workExperience {
+        gap: 20px;
+    }
+    .workExperience > div {
+        flex-direction: column;
+        gap: 4px;
+        /* border-top: 1px solid var(--col--gray2); */
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+        padding: 10px 0;
     }
 }

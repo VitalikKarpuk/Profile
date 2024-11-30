@@ -2,7 +2,9 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
+    margin: 0 auto;
     margin-top: 30px;
+    padding: 0 16px;
 }
 
 .projectWrapper {
@@ -17,7 +19,7 @@
 }
 
 .projectWrapper a:hover {
-    text-decoration: underline
+    text-decoration: underline;
 }
 
 .projectWrapper svg {
@@ -43,4 +45,17 @@
 .img {
     width: 250px;
     margin-right: 20px;
+    object-fit: contain;
+    object-position: top;
+}
+
+@media (max-width: 768px) {
+    .projectWrapper {
+        flex-direction: column;
+    }
+    .img {
+        order: 2;
+        width: 100%;
+        margin-top: 15px;
+    }
 }

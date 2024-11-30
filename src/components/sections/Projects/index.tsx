@@ -80,7 +80,8 @@ const projectList: IProject[] = [
     {
         name: 'ACUVUE',
         header: 'ACUVUE',
-        description: 'Web app for Block Explorer and Analytics Platform for Sui.',
+        description:
+            'Web app for Acuvue brand of disposable contact lenses made in Jacksonville Florida and Limerick-based Vistakon, a subsidiary of Johnson & Johnson (J&J).',
         technologies: [
             'HTML & CSS',
             'React',

@@ -32,7 +32,7 @@ export const workExperience: {
     {
         company: 'EPAM',
         title: 'Software Engineer',
-        period: 'NOV 2019 - DEC 2023',
+        period: 'November 2019 - December 2023',
         responsibility: [
             'Developed and maintained software applications.',
             'Participated in the development of muliservice on Node JS.',

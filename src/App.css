@@ -1,10 +1,4 @@
-.app {
-  background-color: var(--col--light);
-  padding: 0 75px;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-@media (max-width: 768px) {
-  .app {
-    padding: 0 10px;
-  }
-}

@@ -19,7 +19,7 @@ const techList = [
     'Material ui',
     'JSDoc',
     'Git',
-    'Github, GutLab, Bitbucket',
+    'Github, GitLab, Bitbucket',
     'Google Tag Manage',
     'New Relic',
     'Webpack',
@@ -55,14 +55,17 @@ const AboutMeSection = () => {
                 {workExperience.map(({ company, period, title, responsibility, id }) => {
                     return (
                         <div key={id}>
-                            <h2 className={styles.companyName}>{company}</h2>
                             <div className={styles.period}>{period}</div>
-                            <div className={styles.jobTitle}>{title}</div>
-                            <ul>
-                                {responsibility.map((item, index) => {
-                                    return <li key={index}>{item}</li>;
-                                })}
-                            </ul>
+                            <div className={styles.detailWrapper}>
+                                <div className={styles.companyName}>{company}</div>
+                                {/* <div className={styles.period}>{period}</div> */}
+                                <div className={styles.jobTitle}>{title}</div>
+                                <ul>
+                                    {responsibility.map((item, index) => {
+                                        return <li key={index}>{item}</li>;
+                                    })}
+                                </ul>
+                            </div>
                         </div>
                     );
                 })}

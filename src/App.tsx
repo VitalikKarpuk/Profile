@@ -1,9 +1,10 @@
 import React, { useEffect } from 'react';
 import './App.css';
-import AppRouter from './appRouter';
+// import AppRouter from './appRouter';
 import Header from './components/sections/Header/header';
 import Footer from './components/sections/Footer/footer';
-import ChatWithChatGPT from './components/organisms/ChatWithChatGPT';
+import ProjectsPage from './pages/Projects/projects';
+// import ChatWithChatGPT from './components/organisms/ChatWithChatGPT';
 
 function App() {
     const handleWindowResize = () => {
@@ -20,11 +21,13 @@ function App() {
     }, []);
 
     return (
-        <div className="app">
+        <div>
             <Header />
-            <AppRouter />
+
+            <ProjectsPage />
+            {/* <AppRouter /> */}
             <Footer />
-            <ChatWithChatGPT />
+            {/* <ChatWithChatGPT /> */}
         </div>
     );
 }
