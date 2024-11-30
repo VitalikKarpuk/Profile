@@ -1,27 +1,25 @@
 {
   "files": {
-    "main.css": "/Profile/static/css/main.93037163.css",
-    "main.js": "/Profile/static/js/main.9515192d.js",
+    "main.css": "/Profile/static/css/main.b20d6bf6.css",
+    "main.js": "/Profile/static/js/main.61f36deb.js",
     "static/js/787.28cb0dcd.chunk.js": "/Profile/static/js/787.28cb0dcd.chunk.js",
     "static/media/bww.png": "/Profile/static/media/bww.27ace351eaa6d5a17b34.png",
     "static/media/acuvue.png": "/Profile/static/media/acuvue.2e0a174d9ee411ff9a2e.png",
     "static/media/arbys.png": "/Profile/static/media/arbys.6cc42ef9e3e4806d860e.png",
     "static/media/mina.png": "/Profile/static/media/mina.238104bcc24c537e897c.png",
     "static/media/Sui.png": "/Profile/static/media/Sui.e70e0a808e1dca40e5ae.png",
-    "static/media/photo.png": "/Profile/static/media/photo.26b623c0336ce0f9a619.png",
     "static/media/gitHub.svg": "/Profile/static/media/gitHub.63ccf27ca9478e389c0ce3d5adecb4db.svg",
     "static/media/instagram.svg": "/Profile/static/media/instagram.5c3285076083b68a36630b6538cb3336.svg",
     "index.html": "/Profile/index.html",
     "static/media/telegram.svg": "/Profile/static/media/telegram.0a318389d8f3542c2f88e07b725fb3a9.svg",
     "static/media/externalLink.svg": "/Profile/static/media/externalLink.efef46083b38a015ab23b77a928d0f1c.svg",
     "static/media/linkedin.svg": "/Profile/static/media/linkedin.d9f63d33306bbd6ba40de703783b9f9b.svg",
-    "static/media/chat.svg": "/Profile/static/media/chat.32f84b6eb453092b8516166266f7fe15.svg",
-    "main.93037163.css.map": "/Profile/static/css/main.93037163.css.map",
-    "main.9515192d.js.map": "/Profile/static/js/main.9515192d.js.map",
+    "main.b20d6bf6.css.map": "/Profile/static/css/main.b20d6bf6.css.map",
+    "main.61f36deb.js.map": "/Profile/static/js/main.61f36deb.js.map",
     "787.28cb0dcd.chunk.js.map": "/Profile/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.93037163.css",
-    "static/js/main.9515192d.js"
+    "static/css/main.b20d6bf6.css",
+    "static/js/main.61f36deb.js"
   ]
 }
